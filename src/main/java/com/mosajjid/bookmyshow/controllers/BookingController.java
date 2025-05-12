@@ -19,6 +19,9 @@ public class BookingController {
     public BookingController(BookingService bookingService) {
         this.bookingService = bookingService;
     }
+
+
+    //book ticket api
     @PostMapping("/bookTicket")
     public BookingResponseDTO bookTicket(@RequestBody BookingRequestDTO bookingRequestDTO) {
 
